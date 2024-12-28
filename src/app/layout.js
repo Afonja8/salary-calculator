@@ -1,5 +1,6 @@
 'use client';
 
+import './globals.css';
 import { useEffect } from 'react';
 
 export default function RootLayout({ children }) {
@@ -14,10 +15,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head>
-        <title>UK Salary Calculator 2024/25</title>
-        <meta name="description" content="Calculate your UK take-home pay accurately" />
-      </head>
       <body suppressHydrationWarning={true}>
         <div className="min-h-screen bg-gray-50">
           {children}
